@@ -50,8 +50,11 @@ public class SemaphoreTest {
 			};
 			
 			services.execute(runnable);
+			services.shutdown();
 			
-			Future<String> result = services.submit(new Callable<String>() {
+			System.out.println(services.isTerminated());
+			
+			/*Future<String> result = services.submit(new Callable<String>() {
 
 				@Override
 				public String call() throws Exception {
@@ -65,7 +68,7 @@ public class SemaphoreTest {
 			} catch (InterruptedException | ExecutionException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 		}
 	}
 
