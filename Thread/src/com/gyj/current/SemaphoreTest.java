@@ -50,9 +50,9 @@ public class SemaphoreTest {
 			};
 			
 			services.execute(runnable);
-			services.shutdown();
+			//services.shutdown();
 			
-			System.out.println(services.isTerminated());
+			//System.out.println(services.isTerminated());
 			
 			/*Future<String> result = services.submit(new Callable<String>() {
 
