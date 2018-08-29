@@ -10,7 +10,7 @@ public class CountdownLatchTest {
 		ExecutorService service = Executors.newCachedThreadPool();
 		final CountDownLatch cdOrder = new CountDownLatch(1);
 		final CountDownLatch cdAnswer = new CountDownLatch(3);		
-		for(int i=0;i<3;i++){
+		for(int i=0;i<3;i++){ // ¼ÓÒ»¸ö×¢ÊÍ
 			Runnable runnable = new Runnable(){
 					public void run(){
 					try {
